@@ -1,11 +1,14 @@
 import streamlit as st
 import pickle
-import re
+import numpy as np
 
 # ---------------- LOAD MODEL ----------------
 import pickle
-with open("../model.pkl", "rb") as f:
-    model = pickle.load(f)
+try:
+    with open("../model.pkl", "rb") as f:
+        model = pickle.load(f)
+except FileNotFoundError:
+    print("model.pkl not found in the parent directory.")
 vectorizer = pickle.load(open("model/vectorizer.pkl", "rb"))
 
 # ---------------- RISK WORDS ----------------
