@@ -1,0 +1,29 @@
+label,message
+ham,Hey are we still meeting today?
+ham,Don't forget your class tomorrow
+spam,URGENT! Call now to claim your prize
+spam,You have won a lottery click this link now
+spam,This is Microsoft support your device is infected call immediately
+ham,Can we talk later?
+spam,Your account has been suspended verify now
+label,message
+ham,Hey are we still meeting today?
+ham,Don't forget to submit your assignment
+ham,Are you coming to class tomorrow?
+ham,Call me when you're free
+ham,Let's catch up later today
+
+spam,You have won a lottery claim now
+spam,Click this link to receive your prize
+spam,Your bank account is locked verify now
+spam,Free money waiting for you claim instantly
+spam,You have been selected for a reward
+
+fake_support,Microsoft support your device is infected call immediately
+fake_support,Apple security alert suspicious activity detected call support
+fake_support,Windows Defender found virus contact support now
+fake_support,Your computer is locked call Microsoft support immediately
+fake_support,Unauthorized access detected call security team now
+fake_support,Your system is compromised call this number immediately
+fake_support,Your account has been suspended verify with support now
+fake_support,Google support detected unusual login call help desk
