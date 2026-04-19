@@ -3,7 +3,9 @@ import pickle
 import re
 
 # ---------------- LOAD MODEL ----------------
-model = pickle.load(open("model/model.pkl", "rb"))
+import pickle
+with open("../model.pkl", "rb") as f:
+    model = pickle.load(f)
 vectorizer = pickle.load(open("model/vectorizer.pkl", "rb"))
 
 # ---------------- RISK WORDS ----------------
