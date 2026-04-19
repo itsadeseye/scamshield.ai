@@ -9,7 +9,18 @@ try:
         model = pickle.load(f)
 except FileNotFoundError:
     print("model.pkl not found in the parent directory.")
-vectorizer = pickle.load(open("model/vectorizer.pkl", "rb"))
+import pickle
+import io
+
+def load_pickle(file_path):
+    with open(file_path, 'rb') as f:
+        data = io.BytesIO(f.read())
+    return pickle.load(data)
+
+try:
+    model = load_pickle("../model.pkl")
+except Exception as e:
+    print(f"Error loading model: {e}")
 
 # ---------------- RISK WORDS ----------------
 RISK_WORDS = [
